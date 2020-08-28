@@ -1,6 +1,7 @@
 .PHONY: start create_db stop
 
 start:
+	mkdir data/postgres
 	docker-compose up -d
 
 create_db:
