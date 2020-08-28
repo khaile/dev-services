@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+
+  postgres:
+    image: kartoza/postgis
+    container_name: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASS: postgres
+      DATADIR: /opt/postgres/data
+    volumes:
+      - ./data/postgres:/opt/postgres/data
+
+  redis:
+    image: redis
+    container_name: redis
+    restart: always
+    ports:
+      - 6379:6379
