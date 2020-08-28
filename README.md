@@ -7,7 +7,7 @@
 
 ## Setup
 
-Docker and Docker Compose are required int order to run the setup.
+Docker and Docker Compose are required in order to run the setup.
 
 - Clone the repo to your end by run `git clone git@github.com:khaile/dev-services.git`
 - Redirect to the cloned folder by run `cd dev-services`
