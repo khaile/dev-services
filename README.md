@@ -20,4 +20,6 @@ e3d3088b9200        redis               "docker-entrypoint.s…"   2 hours ago  
 0f4c6adf3bd4        kartoza/postgis     "docker-entrypoint.s…"   3 hours ago         Up 3 hours          0.0.0.0:5432->5432/tcp   postgres
 ```
 
-- To create a new DB just run: `make create_db DB=<db_name>`
+- To create a new DB simply run: `make create_db DB=<db_name>`
+- To backup an DB in the container: `make backup_db DB=<db_name>`, a new dump file `<db_name>.sql` will be generated.
+- To restore/clone an DB in the container: `make restore_db DB=<db_name> dump_file=<path/to/dump/file.sql>`
